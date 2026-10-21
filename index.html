@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MyCRM - Simplify Your Contact Management</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Inter', sans-serif; background: #f4f5fb; color: #1e293b; }
+header { background: #1e293b; color: #fff; padding: 20px 40px; display: flex; justify-content: space-between; align-items: center; }
+header h1 { font-size: 1.8rem; }
+header nav a { color: #fff; margin-left: 20px; text-decoration: none; font-weight: 500; }
+header nav a:hover { text-decoration: underline; }
+
+.hero { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; padding: 60px 40px; background: #eef2ff; }
+.hero-text { flex: 1 1 400px; max-width: 600px; padding: 20px; }
+.hero-text h2 { font-size: 2.5rem; margin-bottom: 20px; color: #1e293b; }
+.hero-text p { font-size: 1.1rem; margin-bottom: 30px; color: #475569; }
+.hero-text a { padding: 12px 24px; background: #3b82f6; color: #fff; border-radius: 8px; text-decoration: none; font-weight: 500; transition: 0.2s; }
+.hero-text a:hover { background: #2563eb; }
+.hero-image { flex: 1 1 400px; max-width: 500px; padding: 20px; text-align: center; }
+.hero-image i { font-size: 8rem; color: #3b82f6; }
+
+.features { padding: 60px 40px; max-width: 1200px; margin: 0 auto; }
+.features h3 { text-align: center; font-size: 2rem; margin-bottom: 40px; }
+.feature-cards { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
+.feature-card { background: white; border-radius: 20px; padding: 24px; flex: 1; min-width: 220px; text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,0.05); transition: 0.2s; }
+.feature-card i { font-size: 2.5rem; margin-bottom: 12px; color: #3b82f6; }
+.feature-card h4 { margin-bottom: 8px; font-size: 1.1rem; }
+.feature-card p { font-size: 0.9rem; color: #64748b; }
+.feature-card:hover { transform: translateY(-4px); box-shadow: 0 8px 20px rgba(0,0,0,0.1); }
+
+.cta { text-align: center; padding: 60px 20px; background: #f1f5f9; }
+.cta h3 { font-size: 2rem; margin-bottom: 20px; }
+.cta a { padding: 14px 28px; background: #3b82f6; color: #fff; border-radius: 8px; text-decoration: none; font-weight: 500; transition: 0.2s; }
+.cta a:hover { background: #2563eb; }
+
+footer { background: #1e293b; color: #fff; padding: 30px 40px; text-align: center; font-size: 0.9rem; }
+@media(max-width:768px){.hero{flex-direction:column;}.hero-text,.hero-image{text-align:center;}.feature-cards{flex-direction:column;align-items:center;}}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>MyCRM</h1>
+    <nav>
+        <a href="login.php">Login</a>
+        <a href="register.php">Sign Up</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-text">
+        <h2>Manage Your Contacts Effortlessly</h2>
+        <p>Create contacts, add notes, assign values, and track leads all in one place. Perfect for small businesses and freelancers looking to streamline their workflow.</p>
+        <a href="register.php">Get Started Free</a>
+    </div>
+    <div class="hero-image">
+        <i class="fas fa-address-book"></i>
+    </div>
+</section>
+
+<section class="features">
+    <h3>CRM Features</h3>
+    <div class="feature-cards">
+        <div class="feature-card">
+            <i class="fas fa-user-plus"></i>
+            <h4>Create Contact</h4>
+            <p>Easily add new contacts and manage their details.</p>
+        </div>
+        <div class="feature-card">
+            <i class="fas fa-dollar-sign"></i>
+            <h4>Assign Value</h4>
+            <p>Prioritize contacts by assigning values or importance.</p>
+        </div>
+        <div class="feature-card">
+            <i class="fas fa-sticky-note"></i>
+            <h4>Add Notes</h4>
+            <p>Keep detailed notes on each contact for better follow-ups.</p>
+        </div>
+        <div class="feature-card">
+            <i class="fas fa-tags"></i>
+            <h4>Label Contacts</h4>
+            <p>Label contacts as lead, customer, or associate for easy tracking.</p>
+        </div>
+        <div class="feature-card">
+            <i class="fas fa-filter"></i>
+            <h4>Filter Contacts</h4>
+            <p>Quickly filter contacts by label, value, or priority.</p>
+        </div>
+    </div>
+</section>
+
+<section class="cta">
+    <h3>Ready to Supercharge Your Contact Management?</h3>
+    <a href="register.php">Sign Up Now</a>
+</section>
+
+<footer>
+    &copy; <?php echo date("Y"); ?> MyCRM. All Rights Reserved.
+</footer>
+
+</body>
+</html>
